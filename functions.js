@@ -85,18 +85,26 @@ document.addEventListener("DOMContentLoaded", function()
 
     const textAnimation = () =>
     {
-        setTimeout(()=>
+       setTimeout(()=>
         {
             text.textContent = "Software Engineer";
         },0);
         setTimeout(()=>
         {
-            text.textContent = "Musician";
+            text.textContent = "Web Developer";
         },4000);
         setTimeout(()=>
         {
-            text.textContent = "Batman";
+            text.textContent = "UI/UX Designer";
         },8000);
+        setTimeout(()=>
+        {
+            text.textContent = "Database Developer";
+        },12000);
+        setTimeout(()=>
+        {
+            text.textContent = "Software Dev";
+        },16000);
 
     }
 
