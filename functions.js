@@ -1,4 +1,23 @@
 
+// function for email send
+
+function sendEmail()
+{
+
+    let params = 
+    {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value
+    }
+
+    // use EmailJS to send email using the predefined template and paramater values
+
+    emailjs.send("service_qk25np8","template_gsz40ye",params).then(alert("Email sent successfully :)"))
+
+}
+
+
 document.addEventListener("DOMContentLoaded", function() 
 {
     const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
