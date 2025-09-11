@@ -10,6 +10,22 @@
     
     <!-- social media icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Configure email sent from form -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+
+        (
+        
+        function(){
+        emailjs.init({
+        publicKey: "9IdiPXocDl6-Ps0IV",
+        });
+
+    })();
+    </script>
     
 </head>
 
@@ -294,7 +310,7 @@
                         <h1 class="title">Contact Me :)</h1>
                         
                         <section class="contact-box">
-                            <form action="#">
+                            <form action="sendEmail()">
                                 <input type="text" name="Fullname" class="field" placeholder="Full Name" required>
                                 <input type="email" class="field" name="email" placeholder="Email Address" required>
                                 <textarea name="message" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
